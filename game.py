@@ -19,6 +19,7 @@ grid = [ [2,0,0,0,0,0,3,3,3,0,0,1],
          [0,0,0,1,0,0,0,0,0,0,0,0],
          [0,1,0,0,3,3,1,0,1,1,1,1],
          [4,1,1,1,1,1,0,0,0,0,0,0]
+         
 ]
 
 # FUNCTIONS
@@ -28,7 +29,7 @@ def drawwall():
             if grid[col][row]==1:
                 canvas.create_rectangle(row*50,(col*50),50+(row*50),50+(col*50),fill="black")
             elif grid[col][row]==2:
-                canvas.create_rectangle(row*50,(col*50),50+(row*50),50+(col*50),fill="pink")
+                canvas.create_oval(row*50,(col*50),50+(row*50),50+(col*50),fill="pink")
             elif grid[col][row]==3:
                 canvas.create_rectangle(row*50,(col*50),50+(row*50),50+(col*50),fill="yellow")
             elif grid[col][row]==4:
